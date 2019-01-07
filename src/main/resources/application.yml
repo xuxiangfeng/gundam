@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: ${config_env}
+logging:
+  config: classpath:log-spring.properties.xml

@@ -1,0 +1,32 @@
+server:
+  port: 8653
+spring:
+  profiles:
+    active: dev
+  #数据库jdbc配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/gundam?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    #数据库连接池的配置
+    tomcat:
+      initial-size: 1
+      min-idle: 5
+      max-wait: 1000
+      max-active: 100
+      validation-query: SELECT 1
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 25200000
+      remove-abandoned: true
+      remove-abandoned-timeout: 1800
+      log-abandoned: true
+  #jpa配置
+  jpa:
+  #  hibernate:
+  #    ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
