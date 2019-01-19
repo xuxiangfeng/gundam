@@ -8,4 +8,7 @@ import org.xxf.gundam.domain.GoodsTbl;
  * @date: 2019/1/7 0007 下午 3:50
  */
 public interface GoodsRepository extends JpaRepository<GoodsTbl,Integer> {
+
+
+
 }

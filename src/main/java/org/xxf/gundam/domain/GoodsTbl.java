@@ -58,5 +58,17 @@ public class GoodsTbl {
     @Column(name = "is_delete")
     private Integer isDelete;
 
+    /**
+     * 数量
+     */
+    @Column(name = "num")
+    private Integer num;
+
+    /**
+     * 是否概数 0否 1是
+     */
+    @Column(name = "is_approximate")
+    private Integer isApproximate;
+
 
 }

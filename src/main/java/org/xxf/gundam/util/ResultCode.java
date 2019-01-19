@@ -13,7 +13,7 @@ public enum ResultCode {
 	SYSTEM_ERROR(10000, "内部异常出错"), 
 	DAO_ERROR(10001, "数据层异常出错"), 
 	ILLEGAL_ARGUMENT(10002, "非法参数"),
-	ERROR_SELECT_IS_NULL(10005,"该数据已逃离地球,请重试"),
+	ERROR_BUSINESS(10005,"业务处理异常"),
 	ERROR_DATA_HAS_NOT_INIT(10031, "数据还未被初始化")
 
 	;

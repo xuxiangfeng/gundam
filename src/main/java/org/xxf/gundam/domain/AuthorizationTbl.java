@@ -3,6 +3,7 @@ package org.xxf.gundam.domain;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * 用户登录相关
@@ -16,8 +17,7 @@ import javax.persistence.*;
 public class AuthorizationTbl {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id",unique = true)
     private Integer id;
 
     /**
